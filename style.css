@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    background-color: rgb(36, 49, 97);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 11rem;
+}
+
+.likes{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(./img/img1.webp);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0;
+}
+
+.likes-gruop{
+    display: flex;
+    margin-left: 250px;
+}
+
+.likes-content h2{
+    font-family: Suisse Intl Bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; 
+    margin: 10px;
+}
+
+.likes-content p{
+    color: #fff;
+    width: 450px;
+    margin: 10px;
+
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(36, 49, 97);
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid rgb(36, 49, 97);
+    margin: 10px;
+    transition-duration: .1s;
+    width: 15rem;
+}
+
+.btn:hover{
+    color: rgb(36, 49, 97);
+    background-color: #fff;
+    border: 1px solid rgb(36, 49, 97);
+}
+
+.btn-invert{
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(36, 49, 97);
+    padding: 10px 20px;
+    border: 1px solid rgb(36, 49, 97);
+    margin: 10px;
+    transition-duration: .1s;
+    width: 250px;
+}
+
+.container{
+    padding: 3.5rem 3.5rem 10px 3.5rem;
+    margin: 10px 10px 0 10px;
+}
+
+.btn-invert:hover{
+    color: #fff;
+    background-color: rgb(36, 49, 97);
+    border: 1px solid #fff;
+}
+ 
+.div-span{
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.div-span span{
+    font-size: 30px;
+    font-weight: 300;
+    color: #484444;
+    letter-spacing: 2px;
+}
+
+ 
+.container ul li{
+    text-decoration: solid;
+    list-style: disc;
+    margin: 0 auto;
+    width: 450px;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.div-span-p{
+    font-weight: bold;
+    color: #484444; 
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+.div-span-p p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    display: flex;
+    height: 50vh;
+}
+
+.slider{
+    background-image:  
+        url(./img/img1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 50%;
+}
+
+.servicios{
+    width: 50%;
+}
+
+
+
+
+
+
+footer{
+    color: #fff;
+    background-color: rgb(36, 49, 97);
+    height: 15rem;
+    
+}
+
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 10px 50px;
+}
+
+.footer-h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-redes .redes{
+    margin: 10px;
+    padding: 4px;
+}
+
+.redes1 img { 
+    width: 10px;
+}
+
+.redes2{ 
+    width: 10px;
+}
+
+.redes3{ 
+    width: 10px;
+}
