@@ -1,10 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=Futura+LT+W01+Medium);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .navbar{
@@ -155,16 +157,88 @@
     width: 50%;
 }
 
+/*Carousel */
 
+#contentCarousel{
+    background-color: #f0ecec;  
+    height: 200px;
+    overflow: hidden;
+}
 
+.carousel{ 
+    height: 100%;
+    position: relative;
+}
 
+.target{
+    
+    height: 100%;
+}
+
+.flechas{
+    background-color: rgba(36, 49, 97, .5);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#target-1{
+    background-color: rgb(150, 150, 150);
+}
+
+#target-2{
+    background-color: rgb(185, 145, 145);
+}
+
+#target-3{
+    background-color: rgb(72, 59, 59);
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.section-tanks{
+    height: 600px;
+    display: grid;
+    place-content: center; 
+    text-align: start;
+    max-width: 900px;
+    padding: 20px;
+    font-family: sans-serif;
+    padding: 120px;
+    margin: 120px;
+}
+
+.section-text span{
+    color: #243161; 
+    font-size: 26px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.section-tanks p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.section-tanks h4 span{
+    text-transform: uppercase;
+}
 
 
 footer{
     color: #fff;
     background-color: rgb(36, 49, 97);
-    height: 15rem;
-    
+    height: 16rem;   
 }
 
 .footer-div{
@@ -180,27 +254,29 @@ footer{
     align-items: center;
     padding-bottom: 10px;
 }
-
+ 
 .footer-redes{
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
-
+    margin: 10px;
 }
 
-.footer-redes .redes{
-    margin: 10px;
-    padding: 4px;
+.redes{
+    margin: 5px; 
 }
 
 .redes1 img { 
-    width: 10px;
+    width: 40px;
+    height: auto;
 }
 
-.redes2{ 
-    width: 10px;
+.redes2 img{ 
+    width: 40px;
+    height: auto;
 }
 
-.redes3{ 
-    width: 10px;
+.redes3 img{ 
+    width: 40px;
+    height: auto;
 }
