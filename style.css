@@ -1,12 +1,23 @@
 @import url(https://db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=Futura+LT+W01+Medium);
 
+
+@font-face {
+    font-family: "Futura LT W01 Medium";
+    src: url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.eot");
+    src: url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.svg#Futura LT W01 Medium")format("svg");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Futura LT W01 Medium", Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -28,25 +39,32 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 200px 0;
+    border-top: 1px solid #fff;
 }
 
 .likes-gruop{
-    display: flex;
-    margin-left: 250px;
+    display: flex; 
 }
 
-.likes-content h2{
-    font-family: Suisse Intl Bold;
+.likes-content h1{
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.2em;
+    letter-spacing: 4px;
     color: #fff; 
     margin: 10px;
 }
 
 .likes-content p{
+    font-family:  sans-serif;
     color: #fff;
-    width: 450px;
+    max-width: 417px;
     margin: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8em; 
 
 }
 
@@ -146,32 +164,30 @@
 
 .contenido{    
     display: flex;
-    width: 100%;
     height: 600px;
-}
-
-
+} 
 
 .slider-content-img{   
+    width: 100%;
+    height: 100%;
     background-image: url(./img/AND3-CO-MGP-CNJ-FOTO_156_DIC_2022-E2_V011.jpg); 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
-    width: 50%;
+ 
 }
  
 
 .servicios{  
-    width: 50%;
+    width: 2500px;
     height: auto;
     display: block;
     place-content: center;
     margin: 0 auto;
 }
 
-.servicios{
-    margin: 20px;
+.servicios{ 
     display: grid;
     place-content: center;
     height: 100%;
@@ -226,17 +242,22 @@ ul li {
 
 .carousel{
     background-color: #edeaea;
-    padding: 120px; 
+    padding: 12px 12px 50px 12px; 
+    width: 100%; 
+    margin: 0 auto;
 }
 
 .slider-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /*gap: 100px;*/
+    margin: 10px; 
+    height: 750px;
 }
 
 .slider {
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -247,32 +268,41 @@ ul li {
 
 .slide {
     flex: none;
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
+    margin: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: .5s ease;
+}
+ 
+.slide:hover{
+    overflow: hidden;
 }
 
-.prev-btn {
-    background-color: #333;
-    color: #fff;
+.slide img:hover{
+    transition: .5s ease; 
+    width: 620px;
+}
+
+.prev-btn, .next-btn {
+    background-color: transparent;
+    color: #000;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s;
 }
-
-.prev-btn:hover {
-    background-color: #555;
-}
+  
  
 /*SECTION ATTACH*/
 .section-tanks{
@@ -362,4 +392,18 @@ footer{
     height: auto;
 }
 
- 
+ @media screen and (max-width: 768px) { 
+
+    .footer-div{
+        flex-direction: column;
+    }
+    
+    .container-1 hr{ 
+       display: none;
+    }
+
+    div{
+        width: 666px;
+    }
+
+ }

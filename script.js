@@ -9,11 +9,25 @@
  
   });
 
+  document.getElementById('homepage1').addEventListener('click', () => {
+    window.open('https://grupomacro.com/index.php/es/servicios-grupo-macro','_blank')
+ 
+  });
+
   document.getElementById('urbanizacion').addEventListener('click', () => {
     window.open('https://grupomacro.com/index.php/es/urbanizacion','_blank')
  
   });
  
+  document.getElementById('contactame').addEventListener('click', () => {
+    window.open('https://grupomacro.com/index.php/es/contactenos','_blank')
+ 
+  });
+
+  document.getElementById('nostros').addEventListener('click', () => {
+    window.open('https://grupomacro.com/index.php/es/nosotros-grupo-macro','_blank')
+ 
+  });
   
 
 
