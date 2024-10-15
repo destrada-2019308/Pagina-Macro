@@ -28,9 +28,6 @@
     window.open('https://grupomacro.com/index.php/es/nosotros-grupo-macro','_blank')
  
   });
-  
-
-
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const slides = document.querySelectorAll('.slide');
   const nextButton = document.querySelector('.next-btn');

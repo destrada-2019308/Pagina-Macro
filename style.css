@@ -136,7 +136,7 @@
     text-decoration: solid;
     list-style: disc;
     margin: 0 auto;
-    width: 450px;
+    max-width: 450px;
     text-align: left;
     padding: 10px;
     font-size: 15px;
@@ -167,7 +167,7 @@
     height: 600px;
 } 
 
-.slider-content-img{   
+.slider-content-img{    
     width: 100%;
     height: 100%;
     background-image: url(./img/AND3-CO-MGP-CNJ-FOTO_156_DIC_2022-E2_V011.jpg); 
@@ -306,12 +306,13 @@ ul li {
  
 /*SECTION ATTACH*/
 .section-tanks{
+    width: 100%;
     height: 600px;
     display: grid;
     place-content: center;
     padding: 20px;
     font-family: sans-serif;
-     margin: 0 auto;
+    margin: 0 auto;
     
 }
 
@@ -392,18 +393,54 @@ footer{
     height: auto;
 }
 
- @media screen and (max-width: 768px) { 
-
-    .footer-div{
-        flex-direction: column;
+ @media screen and (max-width: 770px) { 
+    .likes-1{
+        max-width: 700px ;
     }
-    
+
+    .likes-1 h1{
+        width: 10px;
+    }
+  
+    .div-span{
+        display: block;
+    }
+     
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .slider-content-img{
+        display: none;
+        background-image: none;
+    }  
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .container-1 hr{ 
        display: none;
     }
 
-    div{
-        width: 666px;
+    .section-tanks div{
+        
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 350px;
+    }
+ 
+    footer{
+        height: 25rem;
     }
 
+    .footer-div{
+        flex-direction: column;
+    }
+ 
  }
+ 
