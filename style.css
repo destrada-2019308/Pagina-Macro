@@ -43,8 +43,8 @@
 }
 
 .likes-gruop{
-    display: flex; 
-}
+    display: flex;
+} 
 
 .likes-content h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -140,6 +140,7 @@
     text-align: left;
     padding: 10px;
     font-size: 15px;
+    color: #707070;
 }
 
 .div-span-p{
@@ -211,7 +212,7 @@
 }
 
 .servicios-div-h2 h2{
-    color: #414141;
+    color: #707070;
     letter-spacing: .05em;
     line-height: 1.8em;
     font-size: 15px;
@@ -229,7 +230,7 @@ ul li {
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
-    color: #414141;
+    color: #707070;
     width: 500px;
 }
 
@@ -248,8 +249,7 @@ ul li {
 }
 
 .slider-container {
-    display: flex;
-    align-items: center;
+    display: flex; 
     /*gap: 100px;*/
     margin: 10px; 
     height: 750px;
@@ -405,12 +405,18 @@ footer{
     .div-span{
         display: block;
     }
-     
     .servicios{
         display: flex;
         flex-wrap: wrap;
-        width: 350px;
-        margin: 0 auto;
+        min-width: 375px;
+        margin: 0 auto; 
+        text-align: center;
+        
+    }
+
+    .servicios-div-h2 ul{
+        display: grid;
+        place-content: center;
     }
 
     .slider-content-img{
@@ -418,9 +424,32 @@ footer{
         background-image: none;
     }  
 
+    .slider-container{
+        gap: 10px;
+        height: 350px;
+    }
+
+    .slide{
+        width: 550px;
+        height: 260px;
+        margin: none;
+    }
+
+    .slide img{
+        width: 550px;
+        height: 260px;
+        margin: none;
+    }
+
+    .prev-btn, .next-btn{
+        padding: 0;
+    }
+
     .container{
         display: flex;
         flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
     }
 
     .container-1 hr{ 

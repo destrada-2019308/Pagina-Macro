@@ -37,16 +37,12 @@
   const slideWidth = slides[0].clientWidth; // Obtiene el ancho de cada slide
   
   nextButton.addEventListener('click', () => {
-      if (currentSlide < slides.length - 1) {
-          currentSlide++;
-          sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      }
+      currentSlide = (currentSlide + 1) % slides.length; // Se asegura de que currentSlide vuelva a 0 después del último slide
+      sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      console.log(currentSlide);
   });
   
   prevButton.addEventListener('click', () => {
-      if (currentSlide > 0) {
-          currentSlide--;
-          sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      }
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Se asegura de que currentSlide vuelva al último slide si es menor que 0
+      sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   });
-  
