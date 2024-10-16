@@ -148,7 +148,6 @@
     color: #484444; 
     width: 600px;
     margin: 0 auto;
-    
 }
 
 .div-span-p p{
@@ -161,6 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .contenido{    
@@ -397,11 +397,7 @@ footer{
     .likes-1{
         max-width: 700px ;
     }
-
-    .likes-1 h1{
-        width: 10px;
-    }
-  
+ 
     .div-span{
         display: block;
     }
@@ -450,6 +446,10 @@ footer{
         flex-wrap: wrap;
         margin: 10px;
         padding: 10px;
+    }
+
+    .div-span-p{ 
+        min-width: 361px;
     }
 
     .container-1 hr{ 
