@@ -177,8 +177,7 @@
     background-size: cover;
     background-attachment: fixed; 
  
-}
- 
+} 
 
 .servicios{  
     width: 2500px;
@@ -237,101 +236,63 @@ ul li {
 .services{
    margin: 20px;
 }
-
-
+ 
 /*CARRUSEL*/
  
-.carousel{
-    background-color: #edeaea;
-    padding: 12px 12px 50px 12px; 
-    width: 100%; 
-    margin: 0 auto;
-}
-
-.slider-container {
-    display: flex; 
-    /*gap: 100px;*/
-    margin: 10px; 
-    height: 750px;
-}
-
-.slider {
-    margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slider-wrapper {
+.contenido-slider{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-}
+    align-items: center;
+    justify-content: center;  
+    min-height: 100vh;
+    background-color: #edeaea;
+} 
 
-.slide {
-    flex: none;
-    width: 600px;
-    height: 600px;
-    margin: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.slider-wrapper{  
     overflow: hidden;
+    max-width: 1700px;
+    margin: 0 70px 55px;
+    width: 100%;
+} 
+
+.swiper{
+    width: 1000vh;
+    margin: 1px;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .5s ease;
+.card-list .card-item{ 
+    user-select: none;  
+    display: flex; 
+    width: 650px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;  
+    margin: 0 10px;
+    overflow: hidden;
 }
  
-.slide:hover{
-    overflow: hidden;
-}
+.card-list .card-item .user-image{
+    width: 658px;
+    height: 658px;  
+    transition: .2s ease;
+}  
 
-.slide img:hover{
-    transition: .5s ease; 
-    width: 620px;
-}
+.card-list .card-item .user-image:hover{
+    width: 700px;
+    height: 700px;  
+    transition: .2s ease;
+}  
 
-.prev-btn, .next-btn {
-    background-color: transparent;
+.slider-wrapper .swiper-slide-button{
     color: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s;
+    margin-top: -50px;
+    transition: .2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #000;
+    transition: .2s ease;
 }
   
- 
-/*
-.container-slider{
-    background-color: #edeaea;
-     
-}
- 
-.card-item {
-    list-style: none;
-}
-
-.card-list .card-item .card-link{
-    user-select: none;
-    display: block;
-    text-decoration: none;
-    transition: .9s; 
-    padding: 18px;
-}
-
-.card-list .card-link .card-img{
-    width: 100%;
-    aspect-ratio: 10/9;
-    object-fit: cover;
-}
- 
-.swiper-button-next, .swiper-button-prev {
-    color: #fff !important; 
-}
-*/
 /*SECTION ATTACH*/
 .section-tanks{
     width: 100%;
@@ -421,7 +382,7 @@ footer{
     height: auto;
 }
 
- @media screen and (max-width: 770px) { 
+ @media screen and (max-width: 768px) { 
     .likes-1{
         max-width: 700px ;
     }
@@ -443,30 +404,39 @@ footer{
         place-content: center;
     }
 
+    .contenido-slider{ 
+        min-height: 300px;
+     }
+
+
     .slider-content-img{
         display: none;
         background-image: none;
     }  
 
-    .slider-container{
-        gap: 10px;
-        height: 350px;
+     .slider-wrapper{
+        margin: 0 10px 40px;
+     }
+
+     .card-list .card-item{
+        width: 200px;
+        height: 350px; 
+        margin: -10px;
+     }
+
+    .card-list .card-item .user-image{
+        width: 300px;
+        height: 300px;    
     }
 
-    .slide{
-        width: 550px;
-        height: 260px;
-        margin: none;
-    }
+    .card-list .card-item .user-image:hover{
+        width: 300px;
+        height: 300px;  
+        transition: .2s ease;
+    }  
 
-    .slide img{
-        width: 550px;
-        height: 260px;
-        margin: none;
-    }
-
-    .prev-btn, .next-btn{
-        padding: 0;
+    .swiper-slide-button{
+        display: none;  
     }
 
     .container{

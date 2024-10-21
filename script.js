@@ -28,38 +28,38 @@
     window.open('https://grupomacro.com/index.php/es/nosotros-grupo-macro','_blank')
  
   });
+ 
 
-  const sliderWrapper = document.querySelector('.slider-wrapper');
-  const slides = document.querySelectorAll('.slide');
-  const nextButton = document.querySelector('.next-btn');
-  const prevButton = document.querySelector('.prev-btn');
-  
-  let currentSlide = 0;
-  const slideWidth = slides[0].clientWidth; // Obtiene el ancho de cada slide
-  
-  nextButton.addEventListener('click', () => {
-      currentSlide = (currentSlide + 1) % slides.length; // Se asegura de que currentSlide vuelva a 0 después del último slide
-      sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      console.log(currentSlide);
-  });
-  
-  prevButton.addEventListener('click', () => {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Se asegura de que currentSlide vuelva al último slide si es menor que 0
-      sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  });
-
-/*
-  new Swiper('.card-wrapper', {
+  const swiper = new Swiper('.slider-wrapper', {
  
     loop: true,
+    grabCursor: true,
     spaceBetween: 10,
-    slidesPerView: 3,
-    // If we need pagination
- 
+    slidesPerView: 3, // Muestra 3 imágenes a la vez en pantallas grandes
+    
+    // Responsivo: Cambia el número de imágenes dependiendo del tamaño de la pantalla
+    breakpoints: {
+        0: {
+            slidesPerView: 1,  // 1 imagen en pantallas pequeñas
+        },
+        1024: {
+            slidesPerView: 2,  // 2 imágenes en pantallas medianas
+        },
+        1200: {
+            slidesPerView: 3,  // 3 imágenes en pantallas grandes
+        }
+    },
+    
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }, 
-  });*/
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+  
+  });
