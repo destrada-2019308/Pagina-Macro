@@ -28,6 +28,7 @@
     window.open('https://grupomacro.com/index.php/es/nosotros-grupo-macro','_blank')
  
   });
+
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const slides = document.querySelectorAll('.slide');
   const nextButton = document.querySelector('.next-btn');
@@ -46,3 +47,19 @@
       currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Se asegura de que currentSlide vuelva al último slide si es menor que 0
       sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   });
+
+/*
+  new Swiper('.card-wrapper', {
+ 
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    // If we need pagination
+ 
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }, 
+  });*/

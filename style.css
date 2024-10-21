@@ -240,7 +240,7 @@ ul li {
 
 
 /*CARRUSEL*/
-
+ 
 .carousel{
     background-color: #edeaea;
     padding: 12px 12px 50px 12px; 
@@ -304,6 +304,34 @@ ul li {
 }
   
  
+/*
+.container-slider{
+    background-color: #edeaea;
+     
+}
+ 
+.card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    text-decoration: none;
+    transition: .9s; 
+    padding: 18px;
+}
+
+.card-list .card-link .card-img{
+    width: 100%;
+    aspect-ratio: 10/9;
+    object-fit: cover;
+}
+ 
+.swiper-button-next, .swiper-button-prev {
+    color: #fff !important; 
+}
+*/
 /*SECTION ATTACH*/
 .section-tanks{
     width: 100%;
