@@ -107,7 +107,7 @@
 }
 
 .container{
-    padding: 3.5rem 3.5rem 10px 3.5rem;
+    padding: 10px 3.5rem 10px 3.5rem;
     margin: 10px 10px 0 10px;
 }
 
@@ -239,31 +239,25 @@ ul li {
  
 /*CARRUSEL*/
  
-.contenido-slider{
+.contenido-slider{  
     display: flex;
     align-items: center;
     justify-content: center;  
     min-height: 100vh;
     background-color: #edeaea;
+    padding-bottom: 20px;
 } 
 
 .slider-wrapper{  
     overflow: hidden;
     max-width: 1700px;
-    margin: 0 70px 55px;
-    width: 100%;
+    margin: 0 70px 55px; 
 } 
-
-.swiper{
-    width: 1000vh;
-    margin: 1px;
-}
-
+  
 .card-list .card-item{ 
-    user-select: none;  
     display: flex; 
-    width: 650px;
-    height: 600px;
+    width: 650px !important;
+    height: 650px;
     align-items: center;
     justify-content: center;  
     margin: 0 10px;
@@ -273,14 +267,15 @@ ul li {
 .card-list .card-item .user-image{
     width: 658px;
     height: 658px;  
-    transition: .2s ease;
+    transition: .9s ease;
 }  
 
 .card-list .card-item .user-image:hover{
     width: 700px;
     height: 700px;  
-    transition: .2s ease;
+    transition: .9s ease;
 }  
+ 
 
 .slider-wrapper .swiper-slide-button{
     color: #000;
@@ -406,8 +401,8 @@ footer{
 
     .contenido-slider{ 
         min-height: 300px;
+        padding: 30px;
      }
-
 
     .slider-content-img{
         display: none;
@@ -416,21 +411,21 @@ footer{
 
      .slider-wrapper{
         margin: 0 10px 40px;
+   
      }
 
      .card-list .card-item{
-        width: 200px;
-        height: 350px; 
-        margin: -10px;
+        width: 350px !important;
+        height: 300px;   
      }
 
     .card-list .card-item .user-image{
-        width: 300px;
+        width: 350px;
         height: 300px;    
     }
 
     .card-list .card-item .user-image:hover{
-        width: 300px;
+        width: 350px;
         height: 300px;  
         transition: .2s ease;
     }  
