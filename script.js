@@ -35,7 +35,7 @@
     // Responsivo: Cambia el número de imágenes dependiendo del tamaño de la pantalla
     breakpoints: {
         768: {
-            slidesPerView: 2,  // 1 imagen en pantallas pequeñas
+            slidesPerView: 1,  // 1 imagen en pantallas pequeñas
         },
         1024: {
             slidesPerView: 2,  // 2 imágenes en pantallas medianas
