@@ -2,7 +2,7 @@
 
 
 @font-face {
-    font-family: "Futura LT W01 Medium";
+    font-family: "FuentePrincipal";
     src: url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.eot");
     src: url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/77d394fa0c1103c648f880b77cb4a32f.woff2")format("woff2"),
@@ -17,7 +17,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Futura LT W01 Medium", Arial, Helvetica, sans-serif;
+    font-family: "FuentePrincipal", Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -32,14 +32,16 @@
     width: 11rem;
 }
 
-.likes{
+.likes {
+    position: relative; /* Cambia esto si tienes un contenedor padre */
     background-image: url(./img/URBANIZACION_GRUPO_MACRO_GALERY_3\ \(1\).jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Esto se mantendrá */
     padding: 200px 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #fff;  
+    overflow: hidden; /* Asegúrate de que no esté causando problemas */
 }
 
 .likes-gruop{
@@ -257,7 +259,7 @@ ul li {
 .card-list .card-item{ 
     display: flex; 
     width: 650px !important;
-    height: 650px;
+    height: 600px;
     align-items: center;
     justify-content: center;  
     margin: 0 10px;
@@ -267,13 +269,13 @@ ul li {
 .card-list .card-item .user-image{
     width: 658px;
     height: 658px;  
-    transition: .9s ease;
+    transition: 1s ease;
 }  
 
 .card-list .card-item .user-image:hover{
     width: 700px;
     height: 700px;  
-    transition: .9s ease;
+    transition: 1s ease;
 }  
  
 

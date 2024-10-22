@@ -1,8 +1,3 @@
- 
-  document.getElementById('download').addEventListener('click', () => {
-    window.open('https://drive.google.com/drive/folders/1_kq5hhLhGseQ8j6J8JE4ZPKAuUotDGrT?usp=drive_link','_blank')
- 
-  });
 
   document.getElementById('homepage').addEventListener('click', () => {
     window.open('https://grupomacro.com/index.php/es/servicios-grupo-macro','_blank')
@@ -39,8 +34,8 @@
     
     // Responsivo: Cambia el número de imágenes dependiendo del tamaño de la pantalla
     breakpoints: {
-        0: {
-            slidesPerView: 1,  // 1 imagen en pantallas pequeñas
+        768: {
+            slidesPerView: 2,  // 1 imagen en pantallas pequeñas
         },
         1024: {
             slidesPerView: 2,  // 2 imágenes en pantallas medianas
